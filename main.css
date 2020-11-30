@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    margin: 0;
+}
+
+.container {
+    width: 1260px;
+    /* background-color: red;
+    height: 200px; */
+    margin: 0 auto;
+}
+
+.header {
+    height: 612px;
+    background-color: #eef9ff;
+
+
+}
+
+
+
+.header-row {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    margin-bottom: 60px;
+
+}
+
+.logo {
+    display: flex;
+    /* text-align: center; */
+
+}
+
+.logo_title {
+    position: relative;
+    font-family: Uni Neue, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    color: #363636;
+    padding-right: 27px;
+}
+
+.logo_title::after {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 30px;
+    background-color: #dddd;
+}
+
+
+
+
+.logo_slogan {
+    /*  Сertified coach in thetahealing*/
+
+
+    font-family: Uni Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.17;
+    /* or 117% */
+
+    color: #4B5455;
+    padding-left: 27px;
+    width: 160px;
+    font-family: Uni Neue, sans-serif;
+
+}
+
+
+
+.top-nav_link {
+    font-family: Uni Neue;
+
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none;
+    margin-right: 48px;
+
+
+    color: #363636;
+}
+
+.top-nav_link:last-child {
+    margin-right: 0;
+}
+
+.top-nav_link:hover {
+    color: #69B0AC;
+    transition: 0.3s;
+
+}
+
+.header_content {
+    width: 640px;
+    margin-left: 130px;
+    flex-shrink: 0;
+
+
+}
+
+.header_title {
+    font-family: Uni Neue Book, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.1;
+   
+
+
+    color: #363636;
+}
+
+.header_title span {
+    font-family: Uni Neue, sans-serif;
+    color: #69B0AC;
+    /* or 110% */
+}
+
+.header_text {
+    width: 440px;
+    margin-bottom: 30px;
+}
+
+.header_text p {
+    font-family: Uni Neue;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+  
+
+
+    color: #b3b3b3;
+}
+
+.header-list {
+    font-family: Uni Neue;
+    font-style: normal;
+
+    font-size: 16px;
+    line-height: 1.5;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
+    color: #363636;
+
+}
+
+.header-list b {
+    font-weight: 700;
+
+}
+
+.header-list_item {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 40px;
+}
+
+.header-list_item::before {
+    content: "";
+    width: 20px;
+    height: 23px;
+
+    position: absolute;
+    top: 1px;
+    left: 0;
+    background-image: url(../images/bullet.svg);
+
+}
+
+.header_image {
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    display: block;
+    
+
+}
+
+
+
+.header_arrow {
+    position: relative;
+    bottom: 110px;
+    left: 40%;
+    transform: translateX(-50%)
+}
+
+.header_arrow-img {
+    width: 300px;
+
+
+}
+
+
+.section-about {
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+
+.section-about_heading {
+    margin-bottom: 40px;
+    font-family: Uni Neue Book, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.33;
+    
+
+    text-align: center;
+
+    color: #363636;
+}
+
+.section-about_heading span {
+    font-family: Uni Neue, sans-serif;
+    color: #69B0AC;
+    ;
+}
+
+.section-about_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.section-about_video {}
+
+.promo_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 426px;
+    height: 240px;
+    border-radius: 30px;
+    border: 10px solid white;
+    overflow: hidden;
+    background: radial-gradient(25.3% 57.25% at 50% 50%, rgba(80, 152, 190, 0.5) 0%, rgba(52, 113, 146, 0.76) 100%), url(../images/preview.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 80px 100px rgba(211, 226, 235, 0.8);
+}
+
+
+.promo_video {
+    
+}
+
+/* .promo-video_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} */
+
+
+.promo-video_play-btn {
+    position: relative;
+    /* justify-content: center;
+    align-items: center; */
+    width: 80px;
+    height: 84px;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.promo-video_play-btn::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    background: rgba(162, 173, 255, 0.2);
+    transform: translate(-50%, -50%);
+    animation: wave 3s ease-out infinite;
+    
+    
+
+}
+
+@keyframes wave {
+
+    from {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* 50% {
+    width: 180px;
+    height: 180px;
+} */
+    to {
+        width: 180px;
+        height: 180px;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+.section-about_text {
+    font-family: Uni Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+   
+
+
+    color: #545454;
+
+}
+
+.section-about_text strong {
+    font-weight: 700;
+}
+
+
+
+.section-about_text p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 110px;
+    margin-right: 80px;
+}
+/* footer */
+/* numbers */
+
+.numbers-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    
+}
+
+.number-bullets::after {
+
+    display: block;
+    width: 96px;
+    height: 100px;
+    display: flex;
+    
+   
+
+}
+
+.number_value {
+    font-family: Uni Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1;
+    margin-left: 50px;
+    background: rgb(142, 187, 212);
+    background: linear-gradient(150deg, rgba(142, 187, 212, 1) 0%, rgba(167, 215, 241, 1) 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.number_description {
+    display: flex;
+}
+
+.number_description-bold {
+    font-family: Uni Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.17;
+    margin-left: 50px;
+    margin-right: 5px;
+  
+ 
+
+
+    color: #363636;
+}
+
+.number_description-text {
+    font-family: Uni Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.37;
+    color: #545454;
+  
+}
